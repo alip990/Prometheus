@@ -1,89 +1,70 @@
-<img src="https://s1.ax1x.com/2020/04/12/GOesNq.jpg" alt="amov logo" align="right" height="60" />
+Prometheus-Autonomous drone open source project
 
-# Prometheus - 自主无人机开源项目
+Prometheus , in Greek mythology, is one of the most intelligent gods. I hope this project can bring unlimited wisdom and light to the research and development of drones.
+Project overview
 
-**Prometheus**，在希腊神话中，是最具智慧的神明之一，希望本项目能为无人机研发工作带来无限的智慧与光明。
+Prometheus is an open source autonomous drone software platform that provides a complete solution for the intelligent and autonomous flight of drones . This project is based on the PX4 open source flight control firmware, which aims to provide PX4 developers with mature and available on -board computer-side programs and provide a more concise and faster development experience. At present , modules such as mapping , positioning , planning , control and target detection have been integrated , and the Gazebo simulation test code is provided.
 
-## 项目总览
+    Installation and use: Prometheus Developer Manual
 
-Prometheus是一套开源的**自主无人机软件平台**，为无人机的智能与自主飞行提供**全套解决方案**。本项目基于**PX4**开源飞控固件，旨在为PX4开发者配套成熟可用的**机载电脑端**程序，提供更加简洁快速的开发体验。目前已集成**建图**、**定位**、**规划**、**控制**及**目标检测**等模块，并配套有Gazebo仿真测试代码。
+        Prometheus project installation and compilation
 
- - **安装及使用：** [Prometheus开发者手册](https://github.com/amov-lab/Prometheus_User_Guide)
+        Prometheus project simulation module environment construction (Gazebo)
 
-   - [Prometheus项目安装及编译](https://github.com/amov-lab/Prometheus_User_Guide/blob/master/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C%20-%20%E5%AE%89%E8%A3%85%E5%8F%8A%E7%BC%96%E8%AF%91.md)
+        First look at the above installation and environment setup, then look at the specific demo tutorial
 
-   - [Prometheus项目仿真模块环境搭建(Gazebo)](https://github.com/amov-lab/Prometheus_User_Guide/blob/master/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C%20-%20Gazebo%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%8F%8A%E6%B5%8B%E8%AF%95.md)
-   - 先看上面安装和环境搭建,再看具体的demo教程
+Please add WeChat qyp0210 to enter the closed beta communication group.
 
-请添加微信qyp0210进入内测交流群。
+    Supporting hardware purchase: coming soon, so stay tuned! Taobao Follow Search Amu Lab
 
- - **配套硬件购买：**    即将推出，敬请期待！ 淘宝关注搜索 阿木实验室
+Open source project, maintenance is not easy, please click a star collection, thank you for your support!
+function display
 
+    RGBD camera construction
 
-**开源项目，维护不易，还烦请点一个star收藏，谢谢支持！**
+    3D lidar construction map (no demo picture)
 
-## 功能展示
- - **RGBD相机建图**
- 	
-    <img width="400" src="https://s1.ax1x.com/2020/04/08/GWhyFO.gif"/>
- - **3D激光雷达建图(暂无演示图片)**
+    Partial Planning (APF)
 
- - **局部规划(APF)**
-	
-    <img width="400" src="https://s1.ax1x.com/2020/04/12/GLvcpq.gif"/>
- - **全局规划(A star)**
- 	
-    <img width="400" src="https://s1.ax1x.com/2020/04/12/GOSrAe.gif"/>
- - **轨迹优化(Fast_Planner)**
+    Global planning (A star)
 
-	<img width="400" src="https://s1.ax1x.com/2020/04/12/GOCvHf.md.png"/>
+    Trajectory optimization (Fast_Planner)
 
-- **外环控制器二次开发**
-	
-    <img width="400" src="https://s1.ax1x.com/2020/04/12/GOADfS.gif"/>
-    
-- **多机编队飞行**
-  
-    <img width="400" src="https://s1.ax1x.com/2020/04/12/GOAqmR.gif"/>
-    
-- **圆形穿越**
+    Outer loop controller secondary development
 
-	<img width="400" src="https://s1.ax1x.com/2020/04/12/GOFrAf.gif"/>
+    Multi-plane formation flying
 
-- **颜色巡线**
+    Round crossing
 
-	<img width="400" src="https://s1.ax1x.com/2020/04/12/GOkLi8.gif"/>
-- **数字识别**
+    Color line inspection
 
-	<img width="400" src="https://s1.ax1x.com/2020/04/12/GOkVbt.gif"/>
-- **KCF框选追踪**
+    Number recognition
 
-	<img width="400" src="https://s1.ax1x.com/2020/04/12/GOkhxH.gif"/>
-- **YOLO通用目标检测(暂缺)**
+    KCF frame selection tracking
 
-- **移动平台自主降落**
+    YOLO general target detection (unavailable)
 
-	<img width="400" src="https://s1.ax1x.com/2020/04/12/GOAZQJ.gif"/>
+    Mobile platform landing
 
-## 开发团队
+development team
 
- - 项目负责人
-	 - [戚煜华](https://github.com/potato77) 
-	 - [潇齐](https://github.com/orgs/amov-lab/people/amovlab-owl)
- - 建图模块
-	 - [李春雨](https://github.com/Lee0326)
- - 路径规划及轨迹优化
-	 - [江涛](https://github.com/orgs/amov-lab/people/panpanyunshi)
- - 目标识别及检测
-	- [金忍](https://github.com/jario-jin)
- - 无人机控制及任务模块
-	- [戚煜华](https://github.com/potato77) 
- - Gazebo仿真模块
-	- [李春雨](https://github.com/Lee0326)
-	- [戚煜华](https://github.com/potato77) 
+    Project manager
+        Qi Yuhua
+        Xiao Qi
+    Mapping module
+        Li Chunyu
+    Path planning and trajectory optimization
+        Jiang Tao
+    Target recognition and detection
+        Jin Ren
+    UAV control and mission module
+        Qi Yuhua
+    Gazebo simulation module
+        Li Chunyu
+        Qi Yuhua
 
-## 版权申明
+Copyright statement
 
- - 本项目受 BSD 3-Clause 协议保护。点击LICENSE 了解更多
- - 本项目仅限个人使用，请勿用于商业用途。
- - 如利用本项目进行营利活动，阿木实验室将追究侵权行为。
+    This project is protected by the BSD 3-Clause agreement. Click LICENSE to learn more
+    This item is for personal use only, please do not use it for commercial purposes.
+    If this project is used for profit-making activities, Amu Lab will investigate the infringement.
